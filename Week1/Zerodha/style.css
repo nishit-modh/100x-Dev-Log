@@ -1,0 +1,95 @@
+nav {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.123);
+  width: 100vw;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px;
+}
+
+.options {
+  text-decoration: none;
+  padding: 20px;
+  font-family:
+    Segoe UI,
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+  color: grey;
+  font-weight: 500;
+  font-size: large;
+}
+
+.options:hover{
+  color: #387ed1;
+}
+
+@media screen and (max-width: 1200px) {
+  .options {
+    display: none;
+  }
+}
+
+#mainBody {
+  position: relative;
+  top: 65px;
+  padding-top: 100px;
+}
+
+#mainBody div {
+    display: flex;
+    justify-content: center;
+}
+
+#details {
+    display: flex;
+    justify-content: center;
+}
+
+#dashImg {
+  max-height: 45vh;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+#head {
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+  margin: 0px;
+}
+
+#desc {
+  font-size: x-large;
+  color: rgb(56, 56, 56);
+  margin: 10px 0px 15px 0px;
+}
+
+.font {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#signBtn {
+  font-family: sans-serif;
+  background-color: #387ed1;
+  color: white;
+  margin-top: 25px;
+  padding: 10px 30px;
+  width: 143px;
+  border-radius: 3px;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-weight:lighter;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#signBtn:hover {
+  background-color: #414141;
+}
