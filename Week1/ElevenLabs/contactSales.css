@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Page structure */
+#main-flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#left-div,
+#right-div {
+  flex: 0 0 50%; /* Do not grow, do not shrink, stay at exactly 50% */
+  max-width: 50%; /* Extra insurance */
+  overflow: hidden; /* Prevents long logo trains from stretching the whole page */
+  height: 100%;
+}
+
+/* @media (max-width: 1024px) {
+  #main-flex-container {
+    flex-direction: column;
+    height: auto;
+  }
+  #left-div, #right-div {
+    flex:0 0 1;
+    max-width: 100vw;
+  }
+
+  #left-div-flex #platform-images {
+    display: none;
+  }
+} */
+
+#left-div {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* Left div text contents*/
+#left-div-flex {
+  padding: 56px;
+}
+
+/* Heading */
+#elevenLabs-img-flex {
+  height: 72px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-team-title {
+  font-size: 38px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* marketing lines */
+#marketing-div-flex {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.marketing-lines {
+  color: white;
+  display: flex;
+}
+
+.marketing-lines img {
+  margin: 0px 8px;
+}
+
+/* partner details and images */
+#partners-div-flex {
+  margin-top: 1.75rem;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#trusted-partners {
+  margin-bottom: 1.5rem;
+}
+
+#trusted-partners p {
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* scrollable partners window */
+#partner-window {
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+#partner-window::-webkit-scrollbar {
+  display: none;
+}
+
+#partner-train {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* animation: scroll 20s linear infinite;  infinite loop scroll */
+}
+
+#partner-train div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 6.25rem;
+  padding: 0px 1rem;
+}
+
+/* scroll loop animation */
+/* @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }   Moves half the train's length 
+} */
+
+/* for preventing default behaviours & making items unslectable */
+#partner-train img {
+  height: 30px;
+  filter: grayscale(100%) brightness(200%);
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+#partner-train .invert {
+  filter: invert(100%) brightness(200%);
+}
+
+#partner-train #sfLogo {
+  height: 50px;
+}
+
+#partner-train #nvidia {
+  height: 20px;
+}
+
+#partner-train #disney {
+  width: 100px;
+}
+
+#partner-train #DT {
+  height: 32px;
+}
+
+/* start rating and reviews */
+#reviews {
+  opacity: 0.5;
+}
+
+#reviews p {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
+.fa-star {
+  margin: 0px -1.5px;
+}
+
+/* platform images */
+#platform-images {
+  display: grid;
+  grid-template-columns: 60% 30% 60%;
+  padding-left: 5rem;
+}
+
+#platform-images div {
+  padding-top: 1.5rem;
+}
+
+#agents-platform-img,
+#creative-platform-img {
+  grid-row: 1 / span 1;
+  transition:
+    transform 800ms cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 800ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#agents-platform-img {
+  grid-column: 1 / span 2;
+  box-shadow: 0.5rem 0rem 10rem rgba(0, 0, 0, 0.6);
+}
+
+#creative-platform-img {
+  grid-column: 2 / span 2;
+}
+
+#agents-platform-img.active,
+#creative-platform-img.active {
+  z-index: 2;
+  transform: translateY(-1rem);
+}
+
+#agents-platform-img:not(.active),
+#creative-platform-img:not(.active) {
+  z-index: 1;
+  transform: translateY(0rem);
+}
+
+#agents-platform-img.active {
+  box-shadow: 0.5rem 0rem 20rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+#creative-platform-img.active {
+  box-shadow: -0.5rem 0rem 20rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+#agents-platform-img img,
+#creative-platform-img img {
+  border-radius: 0.5rem;
+}
+
+/*---------------------------------------- Right div ----------------------------------*/
+#right-div {
+  display: flex;
+  align-items: center;
+}
+
+#right-div-flex {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  height: max-content;
+  padding: 8rem;
+}
+
+#sales-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-head h1 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 38px;
+  margin-left: -2px;
+}
+
+#form-head p {
+  margin-bottom: 2.25rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#sales-form label {
+  margin-bottom: 0.5rem;
+}
+
+#sales-website {
+  margin-bottom: 1rem;
+}
+
+#sales-form input {
+  width: 100%;
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.8em;
+  font-size: 100%;
+}
+
+#progress-bar {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+#next-btn {
+  height: 2.5rem;
+  padding: 0px 16px;
+  font-size: 1rem;
+  background-color: #6e6e6e;
+  color: #f4f4f4;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100rem;
+  cursor: not-allowed;
+}
