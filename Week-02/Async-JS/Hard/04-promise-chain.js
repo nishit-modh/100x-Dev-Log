@@ -19,15 +19,10 @@ function wait3(t) {
 
 async function calculateTime(t1, t2, t3) {
   const start = performance.now();
-  await wait1(t1)
-    .then(() => {
-      return wait2(t2);
-    })
-    .then(() => {
-      return wait3(t3);
-    });
-  const end = performance.now();
-  return end - start;
+  await wait1(t1);
+  await wait2(t2);
+  await wait3(t3);
+  return performance.now() - start;
 }
 
 module.exports = calculateTime;
