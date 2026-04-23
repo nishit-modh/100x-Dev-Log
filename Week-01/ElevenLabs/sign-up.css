@@ -1,0 +1,155 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+  font-size: 105%;
+  color: black;
+  opacity: 0.9;
+}
+
+#main-body-container {
+  display: flex;
+  height: 92vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-title {
+  position: relative;
+  top: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  #logo-title {
+    display: none;
+  }
+}
+
+#create-sign {
+  margin: 0px;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+#main-flex-parts {
+  height: 100%;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 0rem;
+}
+
+#interactive-actions {
+  width: 100%;
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#google-signup-flex {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#google-btn {
+  width: 100%;
+  display: flex;
+  line-height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+/* inputs and signup button styles */
+.btn {
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.8em;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#emp-hr-div {
+  height: 0.8px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgba(128, 128, 128, 0.25);
+  margin-bottom: 20px;
+}
+
+#form-flex {
+  flex: 7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inp-title {
+  margin: 10px 0px 6px 0px;
+}
+
+input {
+  width: 100%;
+  height: 46px;
+  padding: 0.25rem 16px;
+  box-sizing: border-box;
+}
+
+#pass-flex-div {
+  position: relative;
+  width: 100%;
+}
+
+#pass-flex-div i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: .5;
+}
+
+#signup-btn {
+    width: 100%;
+  background-color: #a6a6ae;
+    height: 46px;
+    padding: 0px 16px;
+    color: #f4f4f4;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+#stickey-footer {
+  width: 100vw;
+  padding: 24px;
+  display: flex;
+  position: fixed;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.65);
+  bottom: 0px;
+  justify-content: center;
+}
+
+.faded-sub-anchor {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.faded-sub-anchor a {
+  text-decoration: underline solid rgba(128, 128, 128, 0.5);
+  color: rgba(0, 0, 0, 0.6);
+}

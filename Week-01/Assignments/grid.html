@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-column-gap: 10px;
+        }
+        #left {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        }
+        #right {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <div id="title"><b>LEFT</b></div>
+        <div id="text">
+          text text text text text text text text text text text text text text
+          text text
+        </div>
+      </div>
+      <div id="right">
+        <div>col 1</div>
+        <div>col 2</div>
+        <div>col 3</div>
+        <div>col 1</div>
+        <div>col 2</div>
+        <div>col 3</div>
+        <div>col 1</div>
+        <div>col 2</div>
+        <div>col 3</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | ElevenLabs</title>
+    <link rel="stylesheet" href="sign-up.css" />
+    <link rel="icon" href="./Assets/fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="main-body-container">
+      <div id="logo-title">
+        <a href="missing.html">
+          <img src="./Assets/elevenLabs.png" alt="" width="107px" />
+        </a>
+      </div>
+      <div id="main-flex-parts">
+        <div name="empty-main-flex-parts"></div>
+        <div id="interactive-actions">
+          <p id="create-sign">Create an account</p>
+          <div id="google-signup-flex">
+            <button onclick="window.location.href='missing.html'" id="google-btn" class="btn">
+              <div class="empty-btn-flex"></div>
+              <div
+                style="
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <img
+                  height="23ex"
+                  src="./Assets/google.svg"
+                  alt="google icon"
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1.05rem;
+                  margin: 0px;
+                  font-weight: 500;
+                  color: rgba(0, 0, 0, 0.9);
+                "
+              >
+                Sign up with Google
+              </p>
+              <div class="empty-btn-flex"></div>
+            </button>
+            <div id="emp-hr-div">&nbsp;</div>
+          </div>
+          <div id="form-flex">
+            <form action="#" style="width: 100%">
+              <p class="inp-title">Email</p>
+              <input class="btn" type="text" name="Email" id="mail" />
+              <p class="inp-title">Password</p>
+              <div id="pass-flex-div">
+                <input class="btn" type="password" name="pass" id="inp-pass" />
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <button onclick="window.location.href='missing.html'" id="signup-btn" class="btn" type="button">Sign up</button>
+            </form>
+            <p class="faded-sub-anchor">
+              Already registerd? <a href="missing.html">Sign in</a>
+            </p>
+            <p class="faded-sub-anchor">
+              For enterprise use? <a href="contact-sales.html">Contact sales</a> 
+            </p>
+          </div>
+        </div>
+        <div name="empty-main-flex-parts"></div>
+      </div>
+      <div name="empty-main"></div>
+    </div>
+    <div id="stickey-footer" class="faded-sub-anchor">
+      By continuing, you agree to our
+      <a href="missing.html">&nbsp;Terms of Service&nbsp;</a>and
+      <a href="missing.html">&nbsp;Privacy Policy</a>.
+    </div>
+    <script src="sign-up.js"></script>
+  </body>
+</html>
