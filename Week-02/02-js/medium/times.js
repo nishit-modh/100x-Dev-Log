@@ -9,7 +9,7 @@ Hint - use Date class exposed in JS
 
 function calculateTime(n) {
   const start = Date.now();
-  sum = (n * (n + 1)) / 2;
+  let sum = (n * (n + 1)) / 2;
   return (Date.now() - start) / 1000;
 }
 

@@ -7,6 +7,7 @@ const arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
 const out = {};
 
 for (const element of arr) {
-  Object.hasOwn(out, element) ? out[element]++ : (out[element] = 1);
+    Object.hasOwn(out, element) ? out[element]++ : (out[element] = 1);
 }
 console.log(out);
+export {};

@@ -20,7 +20,7 @@
 
 
 function countOccurrences(arr) {
-  result = {}
+  const result = {}
   for (const num of arr){
     result[num] = (result[num] || 0) + 1
   } 

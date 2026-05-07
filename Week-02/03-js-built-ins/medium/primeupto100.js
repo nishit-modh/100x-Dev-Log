@@ -19,7 +19,7 @@ function getPrimesUpTo100() {
   // 3 is first proper prime number after 2
   const primeNums = [2];
   // skips even nums using i += 2
-  for (i = 3; i <= 100; i += 2) {
+  for (let i = 3; i <= 100; i += 2) {
     let isPrime = true;
     for (let j = 3; j <= Math.sqrt(i); j += 2) {
       if (i % j === 0) {

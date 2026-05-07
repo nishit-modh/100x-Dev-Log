@@ -11,7 +11,7 @@ function sleep(milliseconds) {
     while(Date.now()-start < milliseconds ){
 
     }
-    resolve();
+    resolve(undefined);
   });
   return halt;
 }

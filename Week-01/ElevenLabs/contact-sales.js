@@ -1,4 +1,6 @@
+/** @type {HTMLElement} */
 const slider = document.querySelector("#partner-window");
+/** @type {HTMLElement} */
 const train = document.querySelector("#partner-train");
 
 let isDown = false;

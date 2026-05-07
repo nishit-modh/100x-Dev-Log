@@ -1,9 +1,9 @@
 // 9. Group people by city
 
 const arr = [
-  { name: "A", city: "Delhi" },
-  { name: "B", city: "Mumbai" },
-  { name: "C", city: "Delhi" },
+    { name: "A", city: "Delhi" },
+    { name: "B", city: "Mumbai" },
+    { name: "C", city: "Delhi" },
 ];
 
 // Output:
@@ -11,8 +11,9 @@ const arr = [
 const obj = {};
 
 for (const ele of arr) {
-  if (!obj[ele.city]) obj[ele.city] = [];
-  obj[ele.city].push(ele.name);
+    if (!obj[ele.city]) obj[ele.city] = [];
+    obj[ele.city].push(ele.name);
 }
 
 console.log(obj);
+export {};
